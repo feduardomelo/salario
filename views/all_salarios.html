@@ -1,0 +1,13 @@
+{% for salario in salarios %}
+    <div class="content">
+
+        <h3>{{salario.profissao}}</h3>
+        <p>{{salario.category}}</p>
+        <div>
+            <p>{{salario.description}}</p>
+        </div>
+        <h4>{{salario.salario}}</h4>
+
+    </div>
+
+{% endfor %}

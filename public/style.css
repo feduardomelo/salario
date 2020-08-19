@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(177, 212, 201);
+}
+
+
+#container {
+    display: flex;
+    
+    
+}
+
+#container section {
+
+    margin: 10px;
+    border-block-color: red;
+    
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+div .content {
+    margin: 30px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 6px;
+
+    width: 700px;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 1000px;
+}
+
+nav li{
+    list-style-type: none;
+
+    margin-right: 16px;
+
+}
+
+nav li a {
+    color: black;
+}
+
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#modal {
+    background-color: blue;
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#modal input {
+    position: relative;
+    left: 30px;
+}

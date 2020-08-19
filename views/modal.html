@@ -1,0 +1,32 @@
+<div id="modal" class="hide">
+    <div class="content">
+        <h1>Cadastrar salário</h1>
+
+        <form action="/" method="POST" onsubmit="checkFields(event)">
+            <!--Meu aprendizado aqui é que no onsubmit eu preciso incluir uma função que retorne true pro post funcionar. Ou só colocar onsubmit=true-->
+            <div class="input-wrapper">
+                <label for="profissao">Profissão</label>
+                <input type="text" name="profissao">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="category">Categoria</label>
+                <input type="text" name="category">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="description">Descrição</label>
+                <textarea name="description" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="salario">Valor do salário: </label>
+                <input type="text" name="salario">
+            </div>
+
+            <a href="#" onclick="onOff()">Voltar</a>
+            <button>Salvar</button>
+
+        </form>
+    </div>
+</div>

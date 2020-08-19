@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<header>
+    <h1>Quanto você ganha?</h1>
+    <a href="/">
+        <img src="https://image.flaticon.com/icons/svg/516/516466.svg" alt="Imagem da logomarca">
+    </a>
+    <nav>
+        <li><a href="/">Início</a></li>
+        <li><a class="button" href="#" onclick="onOff()">Adicionar salário</a></li>
+    </nav>
+</header>
+
+
+
+<main>
+    <section id="salarios">
+
+        {% include "all_salarios.html" %}
+
+    </section>
+</main>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section id="intro">
+    <header>
+        <h1>Quanto você ganha?</h1>
+        <a href="/">
+
+            <img src="https://image.flaticon.com/icons/svg/516/516466.svg" alt="Imagem da logomarca">
+            
+        </a>
+        
+    </header>
+
+    <main>
+        <p>A primeira entrevista chegou e o frio na barriga veio após receber aquela perguntinha?</p>
+
+        <p>Quanto você acha que merece receber?</p>
+
+        <p>Com um compilado de salários de diversas profissões nós vamos te ajudar nisso.</p>
+    </main>
+    
+    <section id="buttons">
+        <button onclick="onOff()">Adicionar salário</button>
+        <a href="/salarios">Ver todos os salários</a>
+    </section>
+
+</section>
+
+<section id="last-salarios">
+
+    {% include "all_salarios.html" %}
+
+</section>
+
+
+{% endblock %}
